@@ -146,7 +146,7 @@ class OrderItem extends Model
 	/**
 	 * @return array
 	 */
-	public function jsonSerialize(): array
+	public function jsonSerialize(): mixed
 	{
 		// Don't remove null/empty values - not needed
 		return $this->toArray();

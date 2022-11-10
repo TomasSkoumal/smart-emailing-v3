@@ -88,7 +88,7 @@ abstract class AbstractSend extends AbstractRequest implements JsonSerializable
 	/**
 	 * @return array
 	 */
-	public function jsonSerialize()
+	public function jsonSerialize(): mixed
 	{
 		return $this->toArray();
 	}

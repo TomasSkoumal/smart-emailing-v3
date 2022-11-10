@@ -58,7 +58,7 @@ class SilencePeriod extends Model
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         // Don't remove any null/empty array - not needed
         return $this->toArray();

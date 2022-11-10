@@ -37,7 +37,7 @@ abstract class Model implements \JsonSerializable
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return array_filter($this->toArray(), function ($val) {
             // Don`t show empty array

@@ -74,7 +74,7 @@ abstract class AbstractEshopOrders extends AbstractRequest implements JsonSerial
 	/**
 	 * @return array
 	 */
-	public function jsonSerialize(): array
+	public function jsonSerialize(): mixed
 	{
 		return $this->toArray();
 	}

@@ -58,7 +58,7 @@ class Recipient extends Model
 		return $data;
 	}
 
-	public function jsonSerialize(): array
+	public function jsonSerialize(): mixed
 	{
 		return $this->toArray();
 	}

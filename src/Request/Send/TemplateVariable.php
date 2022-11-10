@@ -24,7 +24,7 @@ class TemplateVariable extends Model
 		return $this->getCustomData();
 	}
 
-	public function jsonSerialize(): array
+	public function jsonSerialize(): mixed
 	{
 		return $this->toArray();
 	}

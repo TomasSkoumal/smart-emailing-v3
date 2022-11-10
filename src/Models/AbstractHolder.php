@@ -32,7 +32,7 @@ abstract class AbstractHolder implements \JsonSerializable
         return $this->items;
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->toArray();
     }

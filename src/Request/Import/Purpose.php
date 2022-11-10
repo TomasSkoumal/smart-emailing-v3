@@ -109,7 +109,7 @@ class Purpose extends Model
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         // Don't remove null/empty values - not needed
         return $this->toArray();
